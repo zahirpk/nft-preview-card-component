@@ -1,0 +1,175 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-dark-blue-main-BG);
+}
+
+.card-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 320px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--Very-dark-blue-card-BG);
+}
+
+.image-container {
+    margin: 1rem;
+    position: relative;
+    background-color: var(--Cyan);
+    border-radius: 12px;
+}
+
+.image-container img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.nft-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.nft-image:hover {
+    cursor: pointer;
+    opacity: 0;
+}
+
+h1 {
+    margin-left: 1rem;
+    font-size: 1.5em;
+    color: var(--White);
+    font-weight: 600;
+}
+
+h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    color: var(--Soft-blue);
+    font-size: 400;
+}
+
+.middle-container {
+
+    margin-left: 1rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+h4 {
+
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.etherem-icon h4 {
+
+    position: absolute;
+    color: var(--Cyan);
+    bottom: 19px;
+    left: 20px;
+}
+
+.clock-icon h4 {
+    position: relative;
+    color: rgb(185, 184, 184);
+    bottom: 22px;
+    left: 25px;
+}
+
+hr {
+    border: 1px solid var(--Very-dark-blue-line);
+}
+
+footer {
+
+    display: flex;
+    margin: 1rem;
+    position: relative;
+}
+
+footer img {
+
+    width: 20%;
+}
+
+h3 {
+    font-size: 1em;
+    position: absolute;
+    left: 65px;
+    top: 19px;
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+footer span {
+
+    color: var(--White);
+}
+
+footer span:hover {
+
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+/* media Query */
+
+@media(min-width:40em) {
+
+
+/*     .flex-container {
+        height: 100vh;
+    } */
+
+    .card-container {
+
+        width: 400px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        left: 100px;
+        top: 25px;
+    }
+}
